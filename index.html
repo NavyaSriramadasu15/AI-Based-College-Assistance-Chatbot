@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>AI College Chatbot</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h2>SREE DATTHA GROUP OF INSTITUTIONS</h2>
+
+    <hr>
+
+    <!-- DARK MODE BUTTON -->
+
+    <button onclick="toggleMode()">🌙 Dark Mode</button>
+
+    <br><br>
+
+
+    <!-- LOGIN SECTION -->
+
+    <div id="loginSection">
+
+        <h3>Student Login</h3>
+
+        <input type="text" id="studentId"
+        placeholder="Enter Student ID">
+
+        <br><br>
+
+        <input type="email" id="collegeEmail"
+        placeholder="Enter College Email">
+
+        <br><br>
+
+        <input type="password" id="password"
+        placeholder="Enter Password">
+
+        <br><br>
+
+        <button onclick="login()">Login</button>
+
+        <p id="loginMsg"></p>
+
+    </div>
+
+
+
+    <!-- CHATBOT SECTION -->
+
+    <div id="chatSection">
+
+        <h3>AI College Chatbot 🤖</h3>
+
+        <!-- ANNOUNCEMENT BUTTON -->
+
+        <button onclick="showAnnouncements()">
+            📢 Latest Announcements
+        </button>
+
+        <button onclick="clearChat()">
+            🗑️ Clear Chat
+        </button>
+
+        <br><br>
+
+        <div id="messages"></div>
+
+        <input type="text" id="userInput"
+        placeholder="Ask your question...">
+
+        <button onclick="sendMessage()">Send</button>
+
+        <button onclick="startVoice()">🎤</button>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

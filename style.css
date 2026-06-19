@@ -1,0 +1,201 @@
+body {
+    font-family: Arial;
+    background: linear-gradient(-45deg,
+    #dbe7f3,
+    #b8d4f0,
+    #d6e6ff,
+    #f2f7ff);
+
+    background-size: 400% 400%;
+    animation: gradientBG 10s ease infinite;
+
+    transition: 0.5s;
+}
+
+
+
+/* ANIMATED BACKGROUND */
+
+@keyframes gradientBG {
+
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+
+.container {
+
+    width: 420px;
+
+    margin: 50px auto;
+
+    background: white;
+
+    padding: 20px;
+
+    border-radius: 10px;
+
+    text-align: center;
+
+    box-shadow: 0px 0px 15px gray;
+
+    transition: 0.5s;
+}
+
+
+
+h2 {
+
+    color: darkblue;
+
+    margin-bottom: 5px;
+}
+
+
+
+hr {
+
+    margin-bottom: 15px;
+}
+
+
+
+#chatSection {
+
+    display: none;
+}
+
+
+
+#messages {
+
+    height: 250px;
+
+    border: 1px solid #ccc;
+
+    overflow-y: auto;
+
+    padding: 10px;
+
+    text-align: left;
+
+    margin-bottom: 10px;
+
+    background: #f7f7f7;
+
+    border-radius: 8px;
+}
+
+
+
+input {
+
+    width: 75%;
+
+    padding: 8px;
+
+    border-radius: 5px;
+
+    border: 1px solid gray;
+}
+
+
+
+button {
+
+    padding: 8px 15px;
+
+    background: darkblue;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    margin: 5px;
+}
+
+
+
+button:hover {
+
+    background: navy;
+}
+
+
+
+#loginMsg {
+
+    color: red;
+
+    font-weight: bold;
+}
+
+
+
+.user {
+
+    color: blue;
+
+    margin: 5px 0;
+}
+
+
+
+.bot {
+
+    color: green;
+
+    margin: 5px 0;
+}
+
+
+
+/* DARK MODE */
+
+.dark {
+
+    background: #121212;
+
+    color: white;
+}
+
+
+
+.dark .container {
+
+    background: #1e1e1e;
+
+    color: white;
+}
+
+
+
+.dark #messages {
+
+    background: #2b2b2b;
+}
+
+
+
+.dark input {
+
+    background: #444;
+
+    color: white;
+
+    border: 1px solid white;
+}
